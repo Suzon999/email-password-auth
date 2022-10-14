@@ -1,5 +1,6 @@
 import { getAuth } from "firebase/auth";
 import './App.css';
+import BootstrapFrom from "./components/bootstrapFrom/BootstrapFrom";
 import app from "./firebase/firebase.init";
 
 function App() {
@@ -18,14 +19,24 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <form onSubmit={handleSubmit}>
+    <div className="">
+      <BootstrapFrom></BootstrapFrom>
+
+
+
+
+
+
+
+
+
+      {/* <form onSubmit={handleSubmit}>
         <input onBlur={handleEmailBlur} type="email" name="email" id="" placeholder=" Your email" />
         <br />
         <input onBlur={handlePasswordBlur} type="password" name="password" id="" placeholder="Your Password" />
         <br />
         <button type="submit">Regester</button>
-      </form>
+      </form> */}
 
     </div>
   );
